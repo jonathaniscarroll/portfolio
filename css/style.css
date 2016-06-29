@@ -1,0 +1,68 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+	width:100%;
+}
+
+@font-face {
+    font-family: arialRound;
+    src: url("Arial Rounded Bold.ttf");
+}
+
+ul {
+	list-style-type: none; 
+}
+
+@media all and (max-width: 2560px) {
+
+	* {
+		font-size: 20px;
+	}
+
+	.title, .menulink {
+		font-family: arialRound;
+	}
+
+	.menu {
+		float:left;
+		display: inline-block;
+		list-style-position:inside;
+		margin-left:11.111111%;
+		border: solid #000000 0.5rem;
+		border-radius: 2rem;
+		padding:1%;
+
+	}
+
+	.title {
+		text-align: center;
+		width:100%;
+		margin:1%;
+	}
+
+	.menulink {
+		margin-top: 10%;
+		margin-bottom: 10%;
+		font-size: 3rem;
+	}
+
+	.menulink a {
+		font-size: 3rem;
+		color:#000000;
+	}
+
+	#mainTitle {
+		font-size: 3rem;
+		display: inline-block;
+		padding:1%;
+		border: solid #000000 0.5rem;
+		border-radius: 2rem;
+		width:auto;
+	}
+
+}
+
+
