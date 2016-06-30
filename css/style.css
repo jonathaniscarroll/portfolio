@@ -7,6 +7,10 @@ html {
 	width:100%;
 }
 
+body {
+	height: 100vh;
+}
+
 @font-face {
     font-family: arialRound;
     src: url("Arial Rounded Bold.ttf");
@@ -21,48 +25,115 @@ ul {
 	* {
 		font-size: 20px;
 	}
+}
 
-	.title, .menulink {
-		font-family: arialRound;
+@media all and (max-width: 1440px) {
+
+	* {
+		font-size: 10px;
 	}
+}
 
-	.menu {
-		float:left;
-		display: inline-block;
-		list-style-position:inside;
-		margin-left:11.111111%;
-		border: solid #000000 0.5rem;
-		border-radius: 2rem;
-		padding:1%;
+.title, .menulink {
+	font-family: arialRound;
+}
 
-	}
+.menu {
+	float:left;
+	display: inline-block;
+	list-style-position:inside;
+	margin-left:6.666%;
+	border: solid #000000 0.5rem;
+	border-radius: 2rem;
+	padding:1%;
+	margin-top:5%;
+}
 
-	.title {
-		text-align: center;
-		width:100%;
-		margin:1%;
-	}
+.title {
+	text-align: center;
+	width:100%;
+}
 
-	.menulink {
-		margin-top: 10%;
-		margin-bottom: 10%;
-		font-size: 3rem;
-	}
+.menulink {
+	display: block;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	font-size: 3rem;
+	color:#000000;
+	border-radius: 1rem;
+	padding: 1rem;
+}
 
-	.menulink a {
-		font-size: 3rem;
-		color:#000000;
-	}
+.menulink a {
+	font-size: 3rem;
+	color:inherit;
+}
 
-	#mainTitle {
-		font-size: 3rem;
-		display: inline-block;
-		padding:1%;
-		border: solid #000000 0.5rem;
-		border-radius: 2rem;
-		width:auto;
-	}
+.menulink:hover {
+	color:white;
+	background-color: black;
+}
 
+.weird {
+	position: fixed;
+	background-color: cyan;
+	box-shadow: 2px 2px 2px rgba(55,55,55,0.5);
+	width:100px;
+	height:20px;
+	top:10%;
+	border-radius: 25px;
+}
+
+.content {
+	float: right;
+	display: block;
+	height:75%;
+	width:66%;
+	text-align: center;
+}
+
+.content-item {
+	margin:0 auto;
+	height:100%;
+	width:50%;
+	background-image: url("../img/headshot.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 8px 8px white inset;
+}
+
+.content-text {
+	width:100%;
+	position: relative;
+  	/*top: 50%;
+  	transform: translateY(-50%);*/
+  	height:100%;
+	padding:25% 5%;
+	display: none;
+	color:white;
+	font-family: courier;
+	box-sizing: border-box;
+	background-color: rgba(55,55,55,0.3);
+	box-shadow: 0 0 8px 8px white inset;
+}
+
+.content-text p, a {
+	font-size: 2rem;
+}
+
+#mainTitle {
+	margin:1%;
+	font-size: 4rem;
+	display: inline-block;
+	padding:1%;
+	border: solid #000000 0.5rem;
+	border-radius: 2rem;
+	width:auto;
+}
+
+#mainTitle:hover {
+	color:white;
+	background-color: black;
 }
 
 
