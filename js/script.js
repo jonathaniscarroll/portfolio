@@ -12,6 +12,13 @@ $(document).ready(function(){
 	}, function(){
 		$(".content-text").fadeOut(500);
 	})
+
+	$(".title").click(function(){
+		showContact();
+	})
+	$(".contact").click(function(){
+		$(".contact").fadeOut(500);
+	})
 })
 
 function moveShape(shape, position){
@@ -46,4 +53,8 @@ function randomColour(){
 	{
 		weirdColour = "#F9C6D9"
 	}
+}
+
+function showContact(){
+	$(".contact").fadeIn(500);
 }

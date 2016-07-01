@@ -3,22 +3,45 @@
 <head>
 	<title>Jonathan Carroll, Creator</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="css/jquery.fancybox.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="js/jquery-3.0.0.min.js"></script>
 	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
 	<script src="js/script.js"></script>
+
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<link rel="stylesheet" href="css/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/jquery.fancybox-buttons.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
+
+	<link rel="stylesheet" href="css/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script>
+
 </head>
 <body>
+	<div class="contact">
+		<div class="contact-text">
+			<ul>
+				<li class="contact-list"><a href="mailto:jonathan@toughguymountain.com">e-mail</a></li>
+				<li class="contact-list"><a href="http://twitter.com/peopletanning">twitter</a></li>
+			</ul>
+		</div>		
+	</div>
 	<div class="title">
 		<h1 id="mainTitle">Jonathan Carroll: Portfolio</h1>
 	</div>
 
 	<div class="menu">
 		<ul>
-			<li class="menulink"><a href="videos.html">Videos</a></li>
-			<li class="menulink"><a href="websites.html" >Websites</a></li>
-			<li class="menulink"><a href="interactions.html" >Interactions</a></li>
-			<li class="menulink"><a href="sounds.html" >Sounds</a></li>
+			<li class="menulink"><a title="'My Ceiling is Your Floor' by the band Each Other, created by William Kasurak and Jonathan Carroll, 2014" href="https://www.youtube.com/embed/VBe6D8QnMeA?autoplay=1" class="fancybox" data-fancybox-type="iframe" rel="video">Videos</a><a title="Promotional video for 'Tough Guy Mountain: a play,' produced as part of Summerworks Performance Festival 2015" href="https://www.youtube.com/embed/yeNCfj-GI_k?autoplay=1" class="fancybox" data-fancybox-type="iframe" rel="video"></a></li>
+
+			<li class="menulink"><a title="toughguymountain portfolio website"  href="http://toughguymountain.com" class="fancybox" data-fancybox-type="iframe" rel="website">Websites</a><a title="toughguymountain portfolio website"  href="http://thetreehouseproject.ca" class="fancybox" data-fancybox-type="iframe" rel="website"></a></li>
+
+			<li class="menulink"><a title="Experimental treehouse building software developed for Jennie Suddick" href="http://thetreehouseproject.ca/interaction.html" class="fancybox" data-fancybox-type="iframe" rel="interaction">Interactions</a></li>
+
+			<li class="menulink"><a title="Musical and performance project, people tanning" href="http://peopletanning.bandcamp.com" class="fancybox" data-fancybox-type="iframe">Sounds</a></li>
 
 		</ul>
 	</div>
@@ -39,5 +62,12 @@
 	</div>
 	<div class="weird" id="4">
 	</div>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".fancybox").fancybox();
+		});
+
+	</script>
 </body>
 </html>
